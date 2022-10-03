@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-mobile">
+      <img src="./images/logo.svg" alt="" class="logo">
+      <div class="hamburger">
+        <div class="hamburger__bar"></div>
+        <div class="hamburger__bar"></div>
+        <div class="hamburger__bar"></div>
+      </div>
+    </div>
+
+    <div class="nav-shadow">
+      <div class="nav-mobile-on-show">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__dropdown-features">Features</a>
+            <ul class="menu__dropdown menu__dropdown--first">
+              <li>
+                <a href="#" class="menu__dropdown--first-link">
+                  <div class="menu__dropdown--first-image">
+                    <img src="./images/icon-todo.svg" alt="">
+                  </div>
+                  <div class="menu__dropdown--first-txt">
+                    <p>Todo List</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu__dropdown--first-link">
+                  <div class="menu__dropdown--first-image">
+                    <img src="./images/icon-calendar.svg" alt="">
+                  </div>
+                  <div class="menu__dropdown--first-txt">
+                    <p>Calendar</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu__dropdown--first-link">
+                  <div class="menu__dropdown--first-image">
+                    <img src="./images/icon-reminders.svg" alt="">
+                  </div>
+                  <div class="menu__dropdown--first-txt">
+                    <p>Reminders</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu__dropdown--first-link">
+                  <div class="menu__dropdown--first-image">
+                    <img src="./images/icon-planning.svg" alt="">
+                  </div>
+                  <div class="menu__dropdown--first-txt">
+                    <p>Planning</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__dropdown-company">Company</a>
+            <ul class="menu__dropdown menu__dropdown--second">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="#">Careers</a></li>
+          <li class="menu__item"><a href="#">About</a></li>
+        </ul>
+        <div class="login-box">
+          <button class="login-btn">Login</button>
+          <button class="register-btn">Register</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESKTOP-NAV -->
+    <div class="nav-desktop">
+      <ul class="menu-desk">
+        <img src="./images/logo.svg" alt="" class="menu-desk__logo">
+        <li class="menu-desk__item">
+          <a href="#" class="menu-desk__features">Features</a>
+          <ul class="menu-desk__dropdown menu-desk__dropdown--first">
+            <li>
+              <a href="#" class="menu-desk__dropdown--first-link">
+                <div class="menu-desk__dropdown--first-image">
+                  <img src="./images/icon-todo.svg" alt="">
+                </div>
+                <div class="menu-desk__dropdown--first-txt">
+                  <p>Todo List</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="menu-desk__dropdown--first-link">
+                <div class="menu-desk__dropdown--first-image">
+                  <img src="./images/icon-calendar.svg" alt="">
+                </div>
+                <div class="menu-desk__dropdown--first-txt">
+                  <p>Calendar</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="menu-desk__dropdown--first-link">
+                <div class="menu-desk__dropdown--first-image">
+                  <img src="./images/icon-reminders.svg" alt="">
+                </div>
+                <div class="menu-desk__dropdown--first-txt">
+                  <p>Reminders</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="menu-desk__dropdown--first-link">
+                <div class="menu-desk__dropdown--first-image">
+                  <img src="./images/icon-planning.svg" alt="">
+                </div>
+                <div class="menu-desk__dropdown--first-txt">
+                  <p>Planning</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-desk__item">
+          <a href="#" class="menu-desk__company">Company</a>
+          <ul class="menu-desk__dropdown menu-desk__dropdown--second">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li class="menu-desk__item"><a href="#">Careers</a></li>
+        <li class="menu-desk__item"><a href="#">About</a></li>
+      </ul>
+      <div class="login-box">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Register</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="wrapper">
+      <div class="hero">
+        <img src="./images/image-hero-mobile.png" alt="" class="hero-mobile">
+        <img src="./images/image-hero-desktop.png" alt="" class="hero-desktop">
+      </div>
+      <div class="content">
+        <h1 class="content__headline">Make remote work</h1>
+
+        <p class="content__text">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+
+        <button class="learn-btn">Learn more</button>
+
+        <div class="clients">
+          <img src="./images/client-databiz.svg" alt="" class="clients__databiz">
+          <img src="./images/client-audiophile.svg" alt="" class="clients__audiophile">
+          <img src="./images/client-meet.svg" alt="" class="clients__meet">
+          <img src="./images/client-maker.svg" alt="" class="clients__maker">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/KatWita" target="_blank">KatWita</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
